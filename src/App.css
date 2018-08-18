@@ -1,0 +1,534 @@
+body{
+    font-family: 'Raleway', sans-serif;
+
+
+}
+/*APP*/
+.main{
+  display:flex;
+
+}
+
+
+@media only screen and (max-width: 400px){
+  .Layout{
+          
+/*    height: 200px !important;
+
+*//*    background: url(./parkingpicsmall.jpeg) !important;
+*/        background-size: contain !important; 
+
+height: 100vh !important;
+
+    
+
+  }
+}
+@media only screen and (min-width: 400px) {
+  .Layout{
+/*height: 400px !important;
+*/
+height: 100vh !important;
+
+background-size: contain !important;
+    
+
+  }
+}
+@media only screen and (min-width: 670px) {
+  .Layout{
+/*height: 550px !important;
+*/
+height: 100vh !important;
+
+background-size: contain !important;
+    
+
+  }
+}
+
+
+@media only screen and (min-width: 950px){
+  .Layout{
+height: 100vh !important;
+
+background-size: cover !important;
+    
+
+  }
+}
+
+.animatedArrow{
+  z-index: -2;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: roatte(360deg); }
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 8s linear;
+  height: 50px;
+ 
+}
+
+
+.ant-collapse-{
+   background-color: transparent !important;
+}
+.Layout{
+height: 100vh !important;
+
+/*  height: 35vw;
+*//*  background-image: url(./parkingpic.jpeg) !important;
+*/  background-repeat: no-repeat !important;
+
+  
+top: 1% !important;
+
+  background-attachment: fixed !important;
+
+/*  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, .2);
+*/  margin-bottom: 2%;
+
+}
+
+.appTitle{
+  font-family: 'Raleway', sans-serif;
+/*background-color:#1890ff !important;
+*/  text-align: center;
+  font-size: 2vw;
+  position: sticky;
+  margin: auto;
+  color: black !important;
+  top: 0;
+  opacity: 1;
+  
+  height: 5vh;
+  z-index: 0;
+
+
+}
+
+.appTitle h1{
+    color: black !important;
+    margin: 1%
+}
+
+.appTitle h2{
+    color: black !important;
+    font-size: 2vw
+  }
+
+/*LISTS*/
+
+.ant-list-item-meta-description{
+      
+
+}
+
+.listClass{
+  margin: 1%;
+  margin-bottom: 3%;
+  max-width: 100%;
+  padding: 2%;
+  background-color: white !important;
+  border-radius: 3.5px;
+  box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, .1);
+  display: flex !important;
+  flex-direction: row !important;
+  font-size: 3vw;
+}
+.innerListClass{
+  background-color: white !important;
+  padding: 5%;
+  
+}
+
+.listItemMeta{
+  max-width: 100%;
+  display: flex;
+  flex-direction: 
+}
+
+.listItemMeta img{
+  max-width: 50%;
+}
+
+.listItemMeta {
+  max-width: 50% !important;
+}
+
+.ant-list-item-main{
+  border-right: 1px dashed lightgray;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+
+.listClass p{
+      text-transform: lowercase;
+}
+
+.titleDescription{
+  display: flex;
+
+}
+.titleDescription img{
+  max-width: 100%;
+}
+.priceTrueFalse{
+  display: flex;
+  
+
+}
+.price h2{
+
+}
+.restid span{
+  color: #df3c0f !important;
+}
+.priceTag{
+    color: #df3c0f !important;
+    float: right;
+    font-weight: bold;
+}
+.price{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  
+  width: 40%;
+
+}
+
+
+
+.anticon-check{
+  color:green;
+}
+
+.anticon-close{
+  color:red;
+}
+.trueFalse{
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+
+.trueFalseDiv{
+width: 60%;
+margin-left: 
+}
+
+.veckoPris{
+  width: 80%;
+}
+
+.ant-avatar-string{
+
+}
+.avatarText{
+  
+      
+
+    
+}
+.titleDescriptionDiv{
+  width: 60%;
+}
+.avatarText h1{
+ 
+  font-size: 8vw !important;
+}
+
+.pic{
+  width: 70%;
+
+
+
+
+  
+}
+
+.ant-layout{
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
+}
+
+.ant-layout span{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.hidden{
+  display: none !important;
+}
+.ant-list-item-meta-avatar{
+  display: block !important;
+  width: 30%;
+
+}
+
+.ant-list-item-meta-avatar img{
+  object-fit: contain;
+  width: 100%;
+  height: 10vh !important;
+ 
+ 
+
+}
+
+.searchWrapper{
+  position: sticky !important;
+  z-index: 1333777;
+  top: 0; 
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+
+
+}
+.ant-radio-button-wrapper{
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper h2{
+  background-color: white;
+  border-radius: 3.5px;
+  text-align: center !important;
+  box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, .1);
+  padding: 4%;
+}
+.row{
+  display: flex;
+
+}
+/*.ant-layout-sider-zero-width-trigger{
+  opacity: 0.3 !important;
+  z-index: 1337 !important;
+}*/
+
+.sliderDiv i{
+
+  font-size: 3vw;
+}
+
+.autocompleteDiv{
+  text-align: center;
+
+}
+
+/*FILTERS*/
+.wrapper{
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1%;
+}
+
+.wrapper button{
+  width: 100%;
+  height: 100%;
+
+}
+
+.startContent{
+  background-color: white;
+ 
+  margin-top: 1%;
+  margin-bottom: 4%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding: 10px;
+  border-radius: 3.5px;
+  box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, .1);
+
+}
+.contentWrap{
+  margin-left: 1%;
+}
+
+
+
+.filterButton{
+  padding: 0 !important;
+  text-align: left;
+   margin: 0;
+   border-bottom: 0 !important;
+   background-color: transparent;
+   height: 50% !important;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.filterButton a{
+  font-size: 15px;
+
+}
+
+.ant-collapse-item-active a{
+font-weight: bold;
+}
+.filterButton i{
+  font-size: 20px;
+  text-align: bottom;
+}
+.collapse{
+  background-color: transparent !important;
+  padding: 0px !important
+;}
+.drawer{
+
+}
+.popoverButton{
+  color: #1890ff;
+  position: absolute !important;
+  top: 1% !important;
+  right: 2% !important;
+  font-size: 4vw;
+  background-color: white !important;
+  color: #1890ff !important;
+
+}
+.sider {
+  left: 0px !important;
+  width: 0px !important;
+}
+
+.content{
+  width: 100%;
+
+}
+
+h1, h2, a{
+  color: #1890ff !important;
+}
+
+.collapsibleButton{
+  position: sticky !important;
+  z-index: 1337;
+  opacity: 1;
+  background-color: white !important;
+  color: #1890ff !important;
+  border-left: 0 !important;
+  border-radius: 0px 3.5px 3.5px 0px !important;
+  
+
+  width: 50px;
+}
+
+
+
+
+.checkBoxLeft{
+  width: 100%
+}
+.checkBoxRight{
+  width: 50%;
+}
+.sider{
+  
+  background-color: transparent !important;
+
+
+  margin-right: 2%;
+  border-radius: 3.5px;
+
+
+
+   
+}
+
+.content{
+  margin-top: -1%;
+  padding: 1%;
+  
+}
+.Header{
+text-align: left;
+ background-color: #1890ff !important;
+  margin-bottom: 0%;
+    box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, .2);
+border-bottom: 1px solid #1890ff;
+  background-color:#f2f4f5 !important;
+  
+  border-bottom: 1px solid #1890ff
+
+  
+    
+    
+
+}
+
+
+.sliderDiv span{
+  font-size: 100% !important;
+  
+  color: #1890ff !important;
+
+}
+
+
+.sliderDiv{
+  width: 50% !important;
+ padding: 0%;
+  margin: 1%;
+  box-shadow: 0.5px 2px 4px rgba(0, 0, 0, .1);
+}
+.rateDiv{
+   
+    margin-top: 5%;
+    box-shadow: 0.5px 2px 4px rgba(0, 0, 0, .1);
+    padding: 2%;
+}
+
+
+.checkboxDiv{
+  text-align: left !important;
+
+
+  background-color: transparent !important;
+  border: 0 !important;
+
+}
+
+.checkboxDiv h3{
+
+  
+
+
+}
+.AutoComplete{
+
+
+}
+.wrapper button{
+  margin: 1%;
+}
+.radioDiv{
+  margin: auto;
+  box-shadow: 0.1px 0.5px 0.5px 1px rgba(0, 0, 0, .1);
+  position: sticky !important;
+  
+
+}
+
+.checkBoxLow{
+  
+
+  margin-left: 2% !important;
+}
+.checkBox{
+
+
+
+margin-right: 3% !important;
+
+
+}
+
+
+.rateDiv i{
+  
+}
