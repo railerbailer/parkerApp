@@ -9,7 +9,7 @@ import {Collapse, BackTop,Divider,Layout, Menu, Icon, Button, Drawer, Popover} f
 import db from './components/firebase.js'
 import {item} from './components/constants.js'
 import airplane from './airplane.png'
-import './scraping/scrape.js'
+
 
 
 
@@ -119,6 +119,7 @@ class App extends Component {
   
 
     sortFunction(sortering){
+
       if(sortering==='billigast'){
         item.sort((a, b)=>{
           return (a.pris.vecka - b.pris.vecka);
@@ -151,7 +152,7 @@ class App extends Component {
 
 
   render() {
-
+    this.sortFunction(this.state.sortering)
     console.log('app.js ITEM', item)
     return (
       <Layout onScroll={console.log('scrolling working')}>
@@ -167,7 +168,7 @@ class App extends Component {
                 Jämför långtidsparkeringar på Arlanda
               </h2>
             </div>  
-            <Icon ref={c => this.icon = c } style={{color: this.state.onscroll<0?'red !important': 'blue !important'}} type="arrow-down" />
+            <Icon className="arrowDown" type="arrow-down" />
         </Layout>
 
         <Layout style={{marginLeft: 'auto', marginRight: 'auto', maxWidth: '1100px', minHeight: '1000px'}}>

@@ -9,8 +9,16 @@ body{
 
 }
 
+@keyframes largeToSmall{
+  from {font-size: 300%;}
+  to {font-size: inherit;}
+}
 
-@media only screen and (max-width: 401px){
+.arrowDown{
+  animation-name: largeToSmall;
+  animation-duration: 1s;
+}
+@media only screen and (max-width: 400px){
   .Layout{
           
 /*    height: 200px !important;
@@ -149,7 +157,6 @@ top: 1% !important;
 .listItemMeta{
   max-width: 100%;
   display: flex;
-  flex-direction: 
 }
 
 .listItemMeta img{
@@ -220,8 +227,7 @@ top: 1% !important;
 }
 
 .trueFalseDiv{
-width: 60%;
-margin-left: 
+width: 60%; 
 }
 
 .veckoPris{
@@ -232,21 +238,37 @@ margin-left:
 
 }
 .avatarText{
-  
-      
+  z-index: 49238492384923 !important;
+
+
 
     
+}
+.panel{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.collapse{
+display: flex;
+}
+.avatarPanel{
+
+  
+  height: 22px;
+  border-radius: 2px;
+
 }
 .titleDescriptionDiv{
   width: 60%;
 }
 .avatarText h1{
  
-  font-size: 8vw !important;
+  
 }
 
 .pic{
-  width: 70%;
+ width: 20%;
 
 
 

@@ -1,16 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';import {HashRouter} from 'react-router-dom'
-import { render } from 'react-snapshot';
-
-
-render(
-		<HashRouter>
-			<App />
-		</HashRouter>, 
-		document.getElementById('root')
-	
-);
-registerServiceWorker();
+import {HashRouter} from 'react-router-dom'
+import { hydrate, render } from 'react-dom';
+ 
+const rootElement = document.getElementById('root');
+if (rootElement.hasChildNodes()) {
+  hydrate(<HashRouter><App /></HashRouter>, rootElement);
+} else {
+  render(<HashRouter><App /></HashRouter>, rootElement);
+}

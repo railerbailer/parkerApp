@@ -1,5 +1,5 @@
-  import React, { Component } from 'react';
-import { List, Avatar, Icon, Checkbox, Layout, Button } from 'antd';
+  import React, { Component, Text } from 'react';
+import { List, Avatar, Icon, Checkbox, Layout, Button, Collapse } from 'antd';
 import '../App.css';
 import 'antd/dist/antd.css';
 
@@ -13,13 +13,22 @@ const IconText = ({ type, text }) => (
   </span>
 );
 
+const someHtml = () => {
+  return (
+    <div>Do some shit</div>
+  )
+}
+const Panel = Collapse.Panel;
 
-
+function callback(key) {
+  console.log(key);
+}
 
 class Lists extends Component {
 
 
   render() {
+    
     console.log(this.theData)
 
     let filteredData = this.props.listData.filter(
@@ -51,33 +60,36 @@ class Lists extends Component {
           else return (i) 
         }       
       )
-    console.log('filteredData',filteredData)
- 
  
 
     return (
+      
       <List
       
       itemLayout="horizontal"
       size="large"
     >
     {filteredData.map(item=>
-      <Layout className="listClass" key={item.title}>
-        <Layout className="innerListClass">
-          
-            <Layout.Content className="titleDescription">
-              <div className="pic">
+    <Collapse defaultActiveKey={['1']} onChange={callback} className="collapse">
+   
+    <div className="pic">
               {item.avatar.length>10?
-                <img src={item.avatar} className="avatarText" style={{backgroundColor: item.avatarWhite?'#1890ff':'transparent'}}/>
+                <img src={item.avatar} className="avatarPanel" style={{backgroundColor: item.avatarWhite?'#1890ff':'transparent'}}/>
                 :
                 <Layout.Content className="avatarText"><h1>{item.avatar}</h1></Layout.Content>
                  }
               </div>
-              
-            </Layout.Content>
-              
-              
+    <Panel showArrow={false} key="2" className="panel">
+
+      <Layout className="listClass" key={item.title}>
+        <Layout className="innerListClass">
           
+           
+              
+              
+  
+      
+ 
           <Layout.Content className="priceTrueFalse">
             <div className="price">
                 <h2>Priser</h2>
@@ -112,10 +124,14 @@ class Lists extends Component {
           </Layout.Content>
         </Layout>
       </Layout>
+      </Panel>
+
+    </Collapse>
       )}
 
 
     </List>
+    
     );
   }
 }
