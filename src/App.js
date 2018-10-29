@@ -30,7 +30,7 @@ class App extends Component {
     collapsed: false,
     prisVal: [1, 20],
     resaVal: [2, 20],
-    biltvätt: null,
+    biltvätt: false,
     kostnadsfriTransfer: null,
     inomhusparkering: null,
     sistadygn: null,
@@ -38,31 +38,12 @@ class App extends Component {
     bilservice: null,
     privatTransfer: null,
     klädförvaring: undefined,
-
     sortering: "nada",
-
     onscroll: 0
   };
 
   handleCheckboxChange = e => {
-    if (e === "inomhusparkering")
-      this.setState({ inomhusparkering: !this.state.inomhusparkering });
-    if (e === "sistadygn") this.setState({ sistadygn: !this.state.sistadygn });
-    if (e === "biltvätt") this.setState({ biltvätt: !this.state.biltvätt });
-    if (e === "kostnadsfriTransfer")
-      this.setState({ kostnadsfriTransfer: !this.state.kostnadsfriTransfer });
-    if (e === "privatTransfer")
-      this.setState({ privatTransfer: !this.state.privatTransfer });
-    if (e === "bilservice")
-      this.setState({ bilservice: !this.state.bilservice });
-    if (e === "klädförvaring")
-      this.setState({ klädförvaring: !this.state.klädförvaring });
-
-    if (e === "???")
-      this.setState({ kostnadsfriTransfer: !this.state.kostnadsfriTransfer });
-    else null;
-
-    console.log(e);
+    this.setState(prevState => ({ [e]: !prevState[e] }))
   };
   handlePrisChange = e => {
     this.setState({ prisVal: e });
@@ -75,29 +56,6 @@ class App extends Component {
     this.setState({ sortering: e });
   };
 
-  //   componentDidMount(){
-  //       window.addEventListener('scroll', this.onclick1);
-
-  //   }
-
-  // componentWillUnmount() {
-  //     window.removeEventListener('scroll', this.onclick1);
-  // }
-
-  // onclick1(event) {
-  //     let scrollTop = event.srcElement.body.scrollTop,
-  //         itemTranslate = Math.min(0, scrollTop/3 - 60);
-  //     this.setState({
-  //       onscroll: itemTranslate
-  //     });
-
-  //     console.log(this.state.onscroll)
-  // }
-  //   // onclick1 = function(event) {
-
-  //   //     this.setState({onscroll: true})
-
-  //   // }
 
   toggleCollapsed = () => {
     this.setState({
